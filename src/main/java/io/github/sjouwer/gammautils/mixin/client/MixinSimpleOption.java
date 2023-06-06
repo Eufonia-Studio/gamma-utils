@@ -1,4 +1,4 @@
-package io.github.sjouwer.gammautils.mixin;
+package io.github.sjouwer.gammautils.mixin.client;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.client.option.SimpleOption;

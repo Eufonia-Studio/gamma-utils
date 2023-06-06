@@ -4,11 +4,8 @@
   "package": "io.github.sjouwer.gammautils.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "MixinMinecraftClient",
-    "MixinStatusEffectUtil",
-    "MixinClientPlayNetworkHandler",
-    "MixinSimpleOption",
-    "MixinLightmapTextureManager"
+    "client.MixinLightmapTextureManager",
+    "client.MixinSimpleOption"
   ],
   "injectors": {
     "defaultRequire": 1

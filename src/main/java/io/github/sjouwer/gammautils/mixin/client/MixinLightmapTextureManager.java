@@ -1,6 +1,6 @@
-package io.github.sjouwer.gammautils.mixin;
+package io.github.sjouwer.gammautils.mixin.client;
 
-import io.github.sjouwer.gammautils.GammaOptions;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.LightmapTextureManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,9 +11,9 @@ abstract class MixinLightmapTextureManager {
 
     @Redirect(method = "update", at = @At(value = "INVOKE", target = "Ljava/lang/Math;max(FF)F", ordinal = 2))
     private float allowNegativeGamma(float a, float b) {
-        float gamma = (float)GammaOptions.getGamma();
+        double gamma = MinecraftClient.getInstance().options.getGamma().getValue();
         if (gamma < 0) {
-            return gamma;
+            return (float) gamma;
         }
 
         return Math.max(a, b);

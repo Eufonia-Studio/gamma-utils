@@ -1,6 +1,6 @@
 <img src="https://github.com/Sjouwer/gamma-utils/blob/1.19/src/main/resources/assets/gammautils/icon.png" width="200">  
 
-This is a fully configurable and client side gamma/brightness utility mod, making it much easier to see in the dark. 
+This is a fully configurable gamma/brightness utility mod, making it much easier to see in the dark. 
 It's a really basic mod that allows you to change the gamma value in game way higher than the in game brightness setting allows. 
 Nights will look like day and caves will look like they're fully lit up. 
 Basically Fullbright/Gammabright but for Fabric.
@@ -90,7 +90,3 @@ Reset the gamma value to default when Minecraft closes.
  		
 **Required:**  
 [Fabric API](https://github.com/FabricMC/fabric)  
-[Cloth Config API Fabric](https://github.com/shedaniel/cloth-config) (Is required to make the config work)
-
-**Optional:**  
-[Mod Menu](https://github.com/TerraformersMC/ModMenu) (This mod allows you to edit the configs in game)

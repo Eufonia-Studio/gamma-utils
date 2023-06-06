@@ -6,7 +6,8 @@
   "name": "Gamma Utils",
   "description": "Gamma utility mod, making it much easier to see in the dark.",
   "authors": [
-    "Sjouwer"
+    "Sjouwer",
+    "KyoSleep"
   ],
   "contributors": [
     "pt-br: Percario",
@@ -14,47 +15,27 @@
     "zh-cn: GodGun968",
     "ko-kr: gyular"
   ],
-
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/gamma-utils",
     "sources": "https://github.com/Sjouwer/gamma-utils",
     "issues": "https://github.com/Sjouwer/gamma-utils/issues"
   },
-
   "license": "GNU LGPLv3",
   "icon": "assets/gammautils/icon.png",
-
-  "environment": "client",
   "entrypoints": {
-    "client": [
-      "io.github.sjouwer.gammautils.GammaUtils"
+    "main": [
+      "io.github.sjouwer.gammautils.Main"
     ],
-    "modmenu": [
-      "io.github.sjouwer.gammautils.config.ModMenuApiImpl"
+    "client": [
+      "io.github.sjouwer.gammautils.client.MainClient"
     ]
   },
-
   "mixins": [
     "gammautils.mixins.json"
   ],
-
-  "custom": {
-    "modmanager": {
-      "modrinth": "wdLuzzEP"
-    },
-    "modmenu": {
-      "updates": {
-        "provider": "modrinth",
-        "projectId": "wdLuzzEP",
-        "channel": "release"
-      }
-    }
-  },
-
   "depends": {
     "minecraft": "~1.19.4",
     "fabricloader": ">=0.14.0",
-    "fabric-api": ">=0.74.1",
-    "cloth-config": ">=10.0.0"
+    "fabric-api": ">=0.74.1"
   }
 }
