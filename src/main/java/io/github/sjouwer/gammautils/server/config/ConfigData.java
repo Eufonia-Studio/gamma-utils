@@ -34,7 +34,7 @@ public class ConfigData {
     }
 
     public double currentGamma() {
-        return this.currentGama / 100;
+        return this.currentGama;
     }
 
     public int gammaStep() {
